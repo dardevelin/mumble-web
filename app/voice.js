@@ -5,6 +5,7 @@ import keyboardjs from 'keyboardjs'
 import vad from 'voice-activity-detection'
 import DropStream from 'drop-stream'
 import { WorkerBasedMumbleClient } from './worker-client'
+import getUserMedia from './getusermedia'
 
 class VoiceHandler extends Writable {
   constructor (client, settings) {
